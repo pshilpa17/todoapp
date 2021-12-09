@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo app</title>
+</head>
+<body>
+    <main>
+        <h1>TODO LIST</h1>
+        <label>Add New Item:</label>
+        <input type="text" id="todo-input">
+        <button id="add-todo-btn" class="add_button">Add TODO</button>
+
+        <br>
+        <!-- <br><br>
+        <div>
+           <input placeholder="search in the todo" id="search-input">
+           <button id="search-btn">Search</button>
+        </div> -->
+
+        <table id="table">
+            <thead>
+                <th>ID</th>
+                <th>Todo</th>
+                <th>Date Added</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <label>Updated TODO:</label>
+            <input type="text" id="update-todo-input">
+            <button id="update-row-btn" class="update_button">Update</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
